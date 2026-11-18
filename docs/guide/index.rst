@@ -12,5 +12,6 @@ This section will guide you through your journey with Bonobo ETL.
     services
     environment
     purity
+    resumable-loading
     debugging
     plugins

@@ -143,7 +143,9 @@ def open_fs(fs_url=None, *args, **kwargs):
 # standard transformations
 api.register_group(
     CsvReader,
+    CsvToSqlite,
     CsvWriter,
+    DefinitionChangedError,
     FileReader,
     FileWriter,
     Filter,
@@ -154,6 +156,8 @@ api.register_group(
     LdjsonReader,
     LdjsonWriter,
     Limit,
+    LoadError,
+    LoadStateError,
     MapFields,
     OrderFields,
     PickleReader,
@@ -162,6 +166,7 @@ api.register_group(
     RateLimited,
     Rename,
     SetFields,
+    SourceChangedError,
     Tee,
     UnpackItems,
     count,
